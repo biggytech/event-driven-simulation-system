@@ -139,10 +139,6 @@ class Model {
             this.processing_finish_time = Infinity;
             // это фактически время простоя до следующей входящей заявки
             this.downtime += (this.next_arrival_time - this.current_time);
-
-            if (this.next_arrival_time < this.current_time) {
-                throw "ошибка времени"; //TODO: удолить
-            }
         }
     }
 
